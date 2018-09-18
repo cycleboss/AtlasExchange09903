@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85FAD582-D338-4C7C-B9F9-00DEA0EFB8F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AtlasExchangePlusClasses</RootNamespace>
+    <AssemblyName>AtlasExchange09903Classes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.2.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmEvent.cs" />
+    <Compile Include="AtlasExchangeException.cs" />
+    <Compile Include="AtlasExchangeExceptionType.cs" />
+    <Compile Include="AtlasExchangePlus.cs" />
+    <Compile Include="BorderTimeMetering.cs" />
+    <Compile Include="ConfigurableObject.cs" />
+    <Compile Include="ConfigurationTemplate.cs" />
+    <Compile Include="DailyProfile.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Holiday.cs" />
+    <Compile Include="IDataProvider.cs" />
+    <Compile Include="IRouterTask09902.cs" />
+    <Compile Include="IRouterTask09903.cs" />
+    <Compile Include="JournalDataRow.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Meter.cs" />
+    <Compile Include="Metering.cs" />
+    <Compile Include="MeterTask.cs" />
+    <Compile Include="MovedDay.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Router.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Router09902.cs" />
+    <Compile Include="Router09903.cs" />
+    <Compile Include="IRouterConnection.cs" />
+    <Compile Include="RouterTaskGetCoordinates.cs" />
+    <Compile Include="RouterTaskGetCurrentMeterings.cs" />
+    <Compile Include="RouterTaskGetDeviceInfo.cs" />
+    <Compile Include="RouterTaskGetJournal.cs" />
+    <Compile Include="RouterTaskGetJournalCorrections.cs" />
+    <Compile Include="RouterTaskGetJournalCurrent.cs" />
+    <Compile Include="RouterTaskGetJournalDaily.cs" />
+    <Compile Include="RouterTaskGetJournalDiscrete.cs" />
+    <Compile Include="RouterTaskGetJournalEnergyQuality.cs" />
+    <Compile Include="RouterTaskGetJournalExternalInfluence.cs" />
+    <Compile Include="RouterTaskGetJournalLoadProfile.cs" />
+    <Compile Include="RouterTaskGetJournalMonthly.cs" />
+    <Compile Include="RouterTaskGetJournalOnOff.cs" />
+    <Compile Include="RouterTaskGetJournalSelftest.cs" />
+    <Compile Include="RouterTaskGetJournalTg.cs" />
+    <Compile Include="RouterTaskGetJournalVoltage.cs" />
+    <Compile Include="RouterTaskGetLoginInfo.cs" />
+    <Compile Include="RouterTaskGetMeters.cs" />
+    <Compile Include="RouterTaskGetTasks.cs" />
+    <Compile Include="RouterTaskGetTasksStatuses.cs" />
+    <Compile Include="RouterTaskLogin.cs" />
+    <Compile Include="RouterTaskResult.cs" />
+    <Compile Include="RouterTaskSetAlarmEvents.cs" />
+    <Compile Include="RouterTaskSetConfigurationTemplates.cs" />
+    <Compile Include="RouterTaskSetMeters.cs" />
+    <Compile Include="RouterTaskSetTariffPlans.cs" />
+    <Compile Include="RouterTaskSetTasks.cs" />
+    <Compile Include="RouterTaskStatus.cs" />
+    <Compile Include="RouterTaskType.cs" />
+    <Compile Include="RouterConnectionTcp.cs" />
+    <Compile Include="RouterTask.cs" />
+    <Compile Include="RouterType.cs" />
+    <Compile Include="SeasonProfile.cs" />
+    <Compile Include="SpecialDay.cs" />
+    <Compile Include="TariffPlan.cs" />
+    <Compile Include="TariffPlanDlms.cs" />
+    <Compile Include="TariffPlanRfPlc.cs" />
+    <Compile Include="TariffPlanType.cs" />
+    <Compile Include="TariffZone.cs" />
+    <Compile Include="TaskStatus.cs" />
+    <Compile Include="WeeklyProfile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
